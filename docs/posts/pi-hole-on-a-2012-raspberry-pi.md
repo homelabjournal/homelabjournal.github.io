@@ -42,7 +42,7 @@ The only real test of patience was the Pi itself. Updating the operating system 
 
 Normally you'd tell your router to hand out Pi-hole as the DNS server, and every device in the house would use it automatically. Our internet provider's router doesn't allow that: you can't change the DNS server it gives out, or switch off its DHCP.
 
-So for now we set DNS **by hand on each device that matters**: the laptops, the PCs, the consoles and the kitchen iPad. Phones can wait. It's fiddly, but it's a good lesson in how every device decides who to ask for names. When our own firewall takes over handing out addresses later in the plan, the whole house will switch over at once.
+So for now we set DNS **by hand on each device that matters**: the laptops, the PCs and the consoles. Phones can wait. It's fiddly, but it's a good lesson in how every device decides who to ask for names. When our own firewall takes over handing out addresses later in the plan, the whole house will switch over at once.
 
 Two things we learned along the way:
 
@@ -51,9 +51,7 @@ Two things we learned along the way:
 
 ## More than ad blocking
 
-Once Pi-hole is answering DNS, it can also answer for things only inside the house. We gave the NAS and the kitchen dashboard **friendly local names** in Pi-hole, so nobody has to remember a number any more.
-
-And the same tiny Pi now does a second job: it also runs the back end for the kitchen dashboard. More on that in the next post.
+Once Pi-hole is answering DNS, it can also answer for things only inside the house. We gave the NAS a **friendly local name** in Pi-hole, so nobody has to remember its address any more.
 
 ## Living with it
 
@@ -66,4 +64,4 @@ Nothing, apart from the SD card. Everything else came out of a drawer.
 
 ## What's next
 
-A family dashboard on an old iPad that can't be updated past iOS 12, served by the same 2012 Pi.
+This little Pi turned out to have plenty of spare capacity, so next we gave it a second job.
