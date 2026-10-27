@@ -73,7 +73,7 @@ There's a third member of this project: **Claude**, Anthropic's AI assistant. We
 - **Doing the work.** It walks us through each step, reads error messages and logs with us, and keeps the plan and notes up to date as we go.
 - **This blog.** Posts are drafted by Claude from our plan, our notes and the project history, then edited by us so they say what we actually did and think.
 
-None of this means switching your brain off. My son still has to understand what he's typing and why it works, and that's the point. But it means a dad with a day job and a teenager can take on a project this size, and learn far more along the way than they would from a tutorial. Using AI well is a skill in itself, and he's learning that too.
+None of this means switching your brain off. My son still has to understand what's being built and why it works, and that's the point. But it means a dad with a day job and a teenager can take on a project this size, and learn far more along the way than they would from a tutorial. Using AI well is a skill in itself, and he's learning that too.
 
 ## The rules we set ourselves
 
