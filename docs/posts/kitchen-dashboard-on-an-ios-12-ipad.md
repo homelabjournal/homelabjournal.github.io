@@ -22,13 +22,13 @@ Every morning in our house involves the same questions. What's on today? Is it g
 - **live train times** for our usual trains, including whether they're late;
 - **a photo of the day** from our own pictures.
 
-It also made a great split of work. My son owns the front end: the layout, the colours, the fonts, the night mode, every tile. I wrote the back end that gathers the data.
+It also made a great split of work. My son owns the front end: how it looks, the layout, the colours, the night mode and every tile. I own the back end that gathers the data. Neither of us wrote the code itself, though; more on that below.
 
 ## Two very old computers
 
 This project is all about constraints.
 
-**The screen** is a first-generation iPad Air. Its last update is iOS 12, so its browser is Safari 12, from 2018. Plenty of modern web code simply doesn't run on it: no optional chaining (`?.`), no nullish coalescing (`??`), no `gap` on Flexbox layouts, no `aspect-ratio`. The worst one is regex lookbehind: Safari 12 treats it as a syntax error, and one syntax error stops the *whole* script from running, so the screen just stays blank. We set up a linter that refuses anything Safari 12 can't handle, so mistakes are caught on the laptop rather than on the wall.
+**The screen** is a first-generation iPad Air. Its last update is iOS 12, so its browser is Safari 12, from 2018. Plenty of modern web code simply doesn't run on it: no optional chaining (`?.`), no nullish coalescing (`??`), no `gap` on Flexbox layouts, no `aspect-ratio`. The worst one is regex lookbehind: Safari 12 treats it as a syntax error, and one syntax error stops the *whole* script from running, so the screen just stays blank. So the project has a linter that refuses anything Safari 12 can't handle, so mistakes are caught on the laptop rather than on the wall.
 
 **The server** is the original Raspberry Pi: 512MB of RAM and one 700MHz core, already busy with Pi-hole, which owns the usual web ports. So the dashboard runs alongside it on its own port, as a small Python **Flask** app. It does all the fetching and caching, and the iPad only ever asks the Pi for one small bundle of data.
 
@@ -38,7 +38,7 @@ We built the dashboard over two weekends with **Claude Code**, Anthropic's AI co
 
 The most useful trick was a rules file in the repo that Claude Code reads every time it starts. Ours spells out the hard limits: the iPad runs Safari 12, so here's the JavaScript and CSS it can't handle; the server is a Pi with 512MB of RAM, so keep it light; the calendar links and API keys are secrets that never go in the code. With that written down once, it stopped suggesting modern code the iPad couldn't run, and we could spend our time on what the dashboard should do.
 
-We worked step by step from a written plan, with a checkpoint after each step where we checked the real thing on the real iPad. Claude Code wrote most of the back end and the tests; my son designed and refined the page, and we both read and questioned every change before it went on the Pi.
+**Every line of code was written by Claude.** Our job was everything around it: writing the spec, brainstorming features, asking for changes ("move the photo", "make the bin reminder impossible to miss"), and checking the result. We worked step by step from a written plan, with a checkpoint after each step where we looked at the real thing on the real iPad, and we read and questioned every change before it went on the Pi.
 
 ## How it works
 
@@ -60,7 +60,7 @@ We also gave the dashboard a friendly local name through Pi-hole, so the iPad op
 
 **Two requests at once broke the photo.** The logs showed two refreshes running at the same moment, both writing the same temporary file, and one of them losing. Each source now takes a lock, checks again whether someone else has just refreshed it, and only then does the work. The photo is saved under a unique name and swapped into place in one step, so a power cut can never leave half a picture.
 
-**Portrait photos looked awful in a wide strip.** My son moved the photo into a tall panel down the right-hand side, with everything else on the left, and it works far better.
+**Portrait photos looked awful in a wide strip.** My son asked for the photo to move into a tall panel down the right-hand side, with everything else on the left, and it works far better.
 
 **A reload at the wrong moment strands the screen.** The page reloads itself every night to pick up his latest changes. But if the Pi happened to be down at that moment, the iPad would get stuck on Safari's "cannot open the page" screen, locked in place on the wall. Now it checks the Pi is healthy before reloading, and tries again later if it isn't.
 

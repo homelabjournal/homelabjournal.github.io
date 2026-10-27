@@ -69,7 +69,7 @@ We wrote the whole thing down first: a plan in phases, each one small enough to 
 There's a third member of this project: **Claude**, Anthropic's AI assistant. We're using it for almost everything, and we want to be upfront about that from the start, because it's a big part of the story.
 
 - **Planning.** The whole plan, phase by phase, was written in conversation with Claude: what to buy, what order to do things in, and what could go wrong.
-- **Writing the code.** Scripts and apps are written with **Claude Code**, which works directly in our repository: it reads the code, makes changes, runs the tests and explains what it did. We decide what to build and review what it writes.
+- **Writing the code.** **All of the code is written by Claude**, using **Claude Code**, which works directly in our repository: it reads the code, makes changes, runs the tests and explains what it did. Our part is the spec, the feature requests and the brainstorming, and reviewing and testing what comes back.
 - **Doing the work.** It walks us through each step, reads error messages and logs with us, and keeps the plan and notes up to date as we go.
 - **This blog.** Posts are drafted by Claude from our plan, our notes and the project history, then edited by us so they say what we actually did and think.
 
@@ -80,7 +80,7 @@ None of this means switching your brain off. My son still has to understand what
 - **Write everything down.** The plan, every decision and every config backup live in a private Git repository.
 - **Never break the family's internet.** Anything risky happens on the lab network, or late at night.
 - **Scripts never delete.** They move things aside and keep an undo log, and a human empties the bin a week later.
-- **He drives.** I explain, he types. When it breaks, we work out why together.
+- **He drives.** He decides what we try next, runs the commands and asks the questions. When it breaks, we work out why together.
 - **The AI suggests, we decide.** Nothing runs on our network that we haven't read and understood, and it never gets our passwords.
 
 ## What's next
