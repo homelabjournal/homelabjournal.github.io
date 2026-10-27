@@ -17,7 +17,7 @@ We wanted a first project that was small, useful straight away, and taught somet
 
 Every time a device opens a website or an app talks to a server, it first has to turn a name like `example.com` into an address. It asks a DNS server, usually the one your internet provider's router hands out. **Pi-hole** is a DNS server that sits in the middle: it answers normally for everything, except for the thousands of domains on its blocklists, mostly adverts and trackers, where it answers "nothing here". The adverts never load.
 
-It's a brilliant first lesson for a teenager. Within an hour of setting it up, my son was watching the query log scroll past and asking why his games console was quietly talking to dozens of analytics companies.
+It's a brilliant first lesson for a teenager. Pi-hole's query log shows every name every device asks for, as it happens. Watch it for a few minutes and you start to see how much of an ordinary web page is adverts, trackers and analytics, and that's a good conversation to have.
 
 ## The world's slowest server
 
@@ -36,17 +36,17 @@ What we used:
 3. **Install Pi-hole** with its one-line installer, pick an upstream DNS provider, and keep the default blocklist. Adding lots of extra lists on day one mostly just breaks things.
 4. **Test on one laptop first,** for a couple of days, before telling anything else about it.
 
-The only real test of patience was the Pi itself. Updating the operating system and installing Pi-hole took the best part of an evening on that single core. It's a good chance to explain what's actually happening while you wait.
+From a blank SD card to blocking adverts took us one session of about **2–3 hours**, most of it spent waiting for that single core to update the operating system and run the installer. It's a good chance to explain what's actually happening while you wait.
 
 ## The router wouldn't play along
 
 Normally you'd tell your router to hand out Pi-hole as the DNS server, and every device in the house would use it automatically. Our internet provider's router doesn't allow that: you can't change the DNS server it gives out, or switch off its DHCP.
 
-So for now we set DNS **by hand on each device that matters**: the laptops, the PCs and the consoles. Phones can wait. It's fiddly, but it's a good lesson in how every device decides who to ask for names. When our own firewall takes over handing out addresses later in the plan, the whole house will switch over at once.
+So for now we set DNS **by hand on each device that matters**: the laptops and PCs. Phones can wait. It's fiddly, but it's a good lesson in how every device decides who to ask for names. When our own firewall takes over handing out addresses later in the plan, the whole house will switch over at once.
 
 Two things we learned along the way:
 
-- **Give consoles a backup DNS server.** If a device only knows about Pi-hole and the Pi is off, it loses the internet entirely. Consoles get a public DNS server as their second choice, so a reboot of the Pi doesn't start an argument.
+- **Think about a backup DNS server.** If a device only knows about Pi-hole and the Pi is off, it loses the internet entirely. For anything that has to keep working, add a public DNS server as a second choice, so a reboot of the Pi doesn't start an argument.
 - **IPv6 can sneak round it.** The router also hands out IPv6 settings, and some devices ask the provider's DNS over IPv6 and skip Pi-hole altogether. If a device still shows adverts, that's usually why. It gets fixed properly when the firewall arrives.
 
 ## More than ad blocking
