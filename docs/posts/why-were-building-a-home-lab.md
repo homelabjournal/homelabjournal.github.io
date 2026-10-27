@@ -2,7 +2,6 @@
 date: 2026-10-27
 authors: [lab]
 categories: [The plan]
-draft: true
 ---
 
 # Why we're building a home lab
