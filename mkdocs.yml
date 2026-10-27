@@ -1,0 +1,47 @@
+site_name: Home Lab Journal
+site_description: A dad and his teenage son build a home lab, one phase at a time.
+site_url: https://homelabjournal.com/
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: deep orange
+      toggle: { icon: material/weather-night, name: Dark mode }
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: deep orange
+      toggle: { icon: material/weather-sunny, name: Light mode }
+  features:
+    - navigation.indexes
+    - content.code.copy
+
+plugins:
+  - search
+  - blog:
+      blog_dir: .
+      post_date_format: long
+      post_url_format: "{slug}"
+      archive_name: Archive
+      categories_name: Topics
+      draft_on_serve: true
+      draft_if_future_date: true
+  - tags
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc: { permalink: true }
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+
+nav:
+  - Blog: index.md
+  - About: about.md
