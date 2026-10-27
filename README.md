@@ -10,6 +10,7 @@ Write in the first person: "I" is me (dad), "we" is the two of us, and he is "my
 2. Put a `<!-- more -->` line after the first paragraph: everything above it is the summary on the front page.
 3. Preview: `pip install -r requirements.txt`, then `mkdocs serve` and open http://127.0.0.1:8000 (drafts show when previewing).
 4. When it's ready, remove `draft: true`, run through the checklist below, and push.
+5. **One post a day at most.** To queue a post, give it a future `date` and remove `draft: true`: a future-dated post stays hidden, and the daily 07:00 (UTC) rebuild publishes it on its date. Space queued posts at least a day apart.
 
 Images go in `docs/posts/images/` (JPEG or PNG, under about 500KB each).
 

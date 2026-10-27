@@ -2,7 +2,6 @@
 date: 2026-10-28
 authors: [lab]
 categories: [Foundations]
-draft: true
 ---
 
 # Blocking ads for the house with a 2012 Raspberry Pi

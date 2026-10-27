@@ -4,6 +4,8 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: "0 7 * * *"   # every morning, so posts dated today go live without a push
 
 permissions:
   contents: read
