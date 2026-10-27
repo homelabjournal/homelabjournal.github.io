@@ -4,6 +4,8 @@ The blog about our home lab, at https://homelabjournal.com. Posts are Markdown f
 
 ## Writing a post
 
+Write in the first person: "I" is me (dad), "we" is the two of us, and he is "my son".
+
 1. Copy an existing file in `docs/posts/` and change the front matter: `date`, `categories`, and keep `draft: true` until it's ready.
 2. Put a `<!-- more -->` line after the first paragraph: everything above it is the summary on the front page.
 3. Preview: `pip install -r requirements.txt`, then `mkdocs serve` and open http://127.0.0.1:8000 (drafts show when previewing).
