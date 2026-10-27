@@ -73,4 +73,4 @@ We wrote the whole thing down first: a plan in phases, each one small enough to 
 
 ## What's next
 
-The first few weeks went on foundations and a lot of tidying. Coming up: how we found 50,000 duplicate photos, building a dashboard for an iPad stuck on Safari 12, and turning 6,000 files from old hard drives into about 540 neatly named documents.
+The first few weeks went on foundations and a lot of tidying. I'll write them up in the order we did them: first, blocking ads for the whole house with a 2012 Raspberry Pi; then building a dashboard for an iPad stuck on Safari 12; then finding 50,000 duplicate photos; and turning 6,000 files from old hard drives into about 540 neatly named documents.
