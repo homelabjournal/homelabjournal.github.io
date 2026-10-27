@@ -32,6 +32,14 @@ This project is all about constraints.
 
 **The server** is the original Raspberry Pi: 512MB of RAM and one 700MHz core, already busy with Pi-hole, which owns the usual web ports. So the dashboard runs alongside it on its own port, as a small Python **Flask** app. It does all the fetching and caching, and the iPad only ever asks the Pi for one small bundle of data.
 
+## Built with Claude Code
+
+We built the dashboard over two weekends with **Claude Code**, Anthropic's AI coding assistant, working in the project's repository.
+
+The most useful trick was a rules file in the repo that Claude Code reads every time it starts. Ours spells out the hard limits: the iPad runs Safari 12, so here's the JavaScript and CSS it can't handle; the server is a Pi with 512MB of RAM, so keep it light; the calendar links and API keys are secrets that never go in the code. With that written down once, it stopped suggesting modern code the iPad couldn't run, and we could spend our time on what the dashboard should do.
+
+We worked step by step from a written plan, with a checkpoint after each step where we checked the real thing on the real iPad. Claude Code wrote most of the back end and the tests; my son designed and refined the page, and we both read and questioned every change before it went on the Pi.
+
 ## How it works
 
 The Pi does the slow, fiddly work, and the iPad just displays it:

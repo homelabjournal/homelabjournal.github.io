@@ -35,6 +35,8 @@ What we used:
 3. **Install Pi-hole** with its one-line installer, pick an upstream DNS provider, and keep the default blocklist. Adding lots of extra lists on day one mostly just breaks things.
 4. **Test on one laptop first,** for a couple of days, before telling anything else about it.
 
+We followed a step-by-step runbook we'd written with Claude as part of our plan, so there was always an answer to "what next?", and when something looked odd we pasted the output into Claude and worked through it together.
+
 From a blank SD card to blocking adverts took us one session of about **2–3 hours**, most of it spent waiting for that single core to update the operating system and run the installer. It's a good chance to explain what's actually happening while you wait.
 
 ## The router wouldn't play along
