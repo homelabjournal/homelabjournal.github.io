@@ -62,7 +62,7 @@ extra:
   # Cloudflare Web Analytics: the site token from Cloudflare (Web Analytics → the site →
   # Manage site). It's public by design (it appears in every page), so it can live here.
   # Leave it empty to switch the stats off.
-  cloudflare_analytics_token: ""
+  cloudflare_analytics_token: "6ce965d759334a58a625d6d4219bd517"
   social:
     - icon: material/rss
       link: /feed_rss_created.xml
