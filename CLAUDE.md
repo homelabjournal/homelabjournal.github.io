@@ -16,7 +16,7 @@ The blog at https://homelabjournal.com: a dad and his teenage son build a home l
 
 ## Publishing
 
-- **At most one post a day.** New posts are `draft: true` until the dad says publish. To queue one, give it a future `date` and remove `draft: true`: future-dated posts stay hidden (and out of the RSS feed), and the daily 07:00 UTC rebuild publishes them on their date.
+- **Two or three posts a week while catching up** (spaced a day or two apart), then as things happen. Never more than one a day. New posts are `draft: true` until the dad says publish. To queue one, give it a future `date` and remove `draft: true`: future-dated posts stay hidden (and out of the RSS feed), and the daily 07:00 UTC rebuild publishes them on their date.
 - Every post has `date`, `authors: [lab]`, `categories`, and a one-sentence `description` (for search results and link previews), plus a `<!-- more -->` after the opening paragraph.
 - Run the privacy checklist in `README.md` before publishing.
 - Check the build with `mkdocs build --strict` before pushing (`pip install -r requirements.txt`).
@@ -28,9 +28,9 @@ Posts follow the order things were actually done:
 1. Why we're building a home lab (published 27 Oct 2026)
 2. Pi-hole on a 2012 Raspberry Pi (published 28 Oct 2026)
 3. The kitchen dashboard on an iOS 12 iPad (draft, dated 29 Oct; waiting for the dad's review)
-4. Tidying up the NAS: locking it down, accounts, health checks, space, layout and backups (draft, dated 30 Oct)
-5. Photos: finding and removing 50,000 duplicates, then sorting 20 years of pictures by date (draft, dated 31 Oct)
-6. Documents: 6,000 files from old drives down to about 540, named from their contents with OCR
+4. Tidying up the NAS: locking it down, accounts, health checks, space, layout and backups (draft, dated Sat 31 Oct)
+5. Photos: finding and removing 50,000 duplicates, then sorting 20 years of pictures by date (draft, dated Tue 3 Nov)
+6. Documents: 6,000 files from old drives down to about 540, named from their contents with OCR (planned for Thu 5 Nov)
 7. The rack tidy, with before and after photos (when it's done)
 8. Then the firewall, the Pi cluster and the rest of the plan, as they happen
 
