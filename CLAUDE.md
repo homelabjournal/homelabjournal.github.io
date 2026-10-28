@@ -10,7 +10,7 @@ The blog at https://homelabjournal.com: a dad and his teenage son build a home l
 - **Nothing that helps anyone into the house:** no IP addresses, open ports, real network or VLAN maps, Wi-Fi names, MAC or serial numbers, hostnames or domain names of home services, provider or council names, station names, or exact device models that pin the house down. Explain how and why, not our exact config.
 - **Never link this blog to the dad's other public work** (his personal GitHub account, other projects or sites) or to the private lab repo.
 - **Commits** use the blog identity set in this repo's git config: `Home Lab Journal <blog@homelabjournal.com>`. No session links or personal trailers in commit messages.
-- **Honest about AI, from the start.** The plan was written with Claude; **all** the code is written by Claude (Claude Code), driven by our spec, feature requests and brainstorming; posts are drafted by Claude from our notes and edited by us. Never imply we wrote code by hand.
+- **Honest about AI, from the start.** The plan was written with Claude; the code is written **with** Claude Code (Claude writes it, driven by our spec, feature requests and brainstorming, and we may tweak it); posts are drafted by Claude from our notes and edited by us. Say "with Claude", not "by Claude", for code from now on. Never imply we wrote the bulk of it by hand.
 - **Only write what happened.** Draft from the facts we give you, and ask when unsure (who did what, how long it took, what broke). Don't invent anecdotes.
 - **First person, plain British English,** friendly and specific. Short paragraphs, bold lead-ins, lists where they help.
 
