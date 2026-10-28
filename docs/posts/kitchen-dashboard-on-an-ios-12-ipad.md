@@ -57,7 +57,7 @@ We also gave the dashboard a friendly local name through Pi-hole, so the iPad op
 
 ## Things that bit us
 
-**The calendar took a minute to read.** Our shared family calendar goes back years, and on the old Pi, parsing all 844 events took about **59 seconds**, every ten minutes. Most of those were one-off events from years ago. The fix was to throw away events that can't possibly fall in the next two days *before* parsing, while always keeping repeating events, so the slow parser only sees the few that matter.
+**The calendar took a minute to read.** Our shared family calendar goes back years, and on the old Pi, parsing all 844 events took about **59 seconds**, every ten minutes. Most of those were one-off events from years ago. The fix was to throw away events that can't possibly fall in the next two days *before* parsing, while always keeping repeating events, so the slow parser only sees the few that matter. Parsing now takes under a second.
 
 **Two requests at once broke the photo.** The logs showed two refreshes running at the same moment, both writing the same temporary file, and one of them losing. Each source now takes a lock, checks again whether someone else has just refreshed it, and only then does the work. The photo is saved under a unique name and swapped into place in one step, so a power cut can never leave half a picture.
 

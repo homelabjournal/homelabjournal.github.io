@@ -78,7 +78,7 @@ Real photo collections are messier than that, so the script has a few rules:
 
 ## Built with Claude Code
 
-As with everything in this lab, **Claude wrote all the code**: the duplicate finder, the date sorter, and every fix above. Our part was deciding what we wanted (keep the named folders, drop the Live Photo clips, never delete), reading the dry-run reports, and running the moves. Each of the snags became a short request, a fix, and another dry run.
+My son and I did this one together, both working with Claude. As with everything in this lab, **Claude wrote all the code**: the duplicate finder, the date sorter, and every fix above. Our part was deciding what we wanted (keep the named folders, drop the Live Photo clips, never delete), reading the dry-run reports, and running the moves. Each of the snags became a short request, a fix, and another dry run.
 
 ## Where it's up to
 
