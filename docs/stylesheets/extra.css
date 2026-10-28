@@ -1,0 +1,192 @@
+/* Home Lab Journal: the "patch panel" look.
+   Ink, white and four network-cable colours, one per phase of the plan. */
+
+:root {
+  --hlj-ink: #111827;
+  --hlj-blue: #2563EB;
+  --hlj-yellow: #FACC15;
+  --hlj-orange: #F97316;
+  --hlj-green: #22C55E;
+  --hlj-cable: linear-gradient(90deg,
+    var(--hlj-blue) 0 25%, var(--hlj-yellow) 25% 50%,
+    var(--hlj-orange) 50% 75%, var(--hlj-green) 75% 100%);
+}
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #111827;
+  --md-primary-fg-color--light: #374151;
+  --md-primary-fg-color--dark: #030712;
+  --md-primary-bg-color: #FFFFFF;
+  --md-primary-bg-color--light: #D1D5DB;
+  --md-accent-fg-color: #1E3A8A;
+  --md-typeset-a-color: #1D4ED8;
+  --md-default-fg-color: #111827;
+  --hlj-card-border: #111827;
+  --hlj-shadow: #111827;
+  --hlj-muted: #4B5563;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #030712;
+  --md-primary-fg-color--light: #1F2937;
+  --md-primary-fg-color--dark: #000000;
+  --md-primary-bg-color: #FFFFFF;
+  --md-default-bg-color: #0B1120;
+  --md-default-fg-color: #E5E7EB;
+  --md-typeset-color: #E5E7EB;
+  --md-accent-fg-color: #BFDBFE;
+  --md-typeset-a-color: #93C5FD;
+  --md-footer-bg-color: #030712;
+  --hlj-card-border: #E5E7EB;
+  --hlj-shadow: #2563EB;
+  --hlj-muted: #9CA3AF;
+}
+
+/* Header: ink bar with a cable stripe underneath */
+.md-header {
+  box-shadow: none;
+}
+.md-header::after {
+  content: "";
+  display: block;
+  height: 6px;
+  background: var(--hlj-cable);
+}
+.md-header__topic:first-child .md-ellipsis {
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+}
+
+/* Headings: loud. Body: quiet. */
+.md-typeset h1 {
+  font-weight: 900;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  color: var(--md-default-fg-color);
+}
+.md-typeset h2 {
+  font-weight: 800;
+  letter-spacing: -0.015em;
+}
+.md-typeset h2::before {
+  content: "";
+  display: block;
+  width: 2rem;
+  height: 0.3rem;
+  border-radius: 0.15rem;
+  margin-bottom: 0.5rem;
+  background: var(--hlj-blue);
+}
+.md-typeset h3 {
+  font-weight: 800;
+}
+.md-typeset strong {
+  font-weight: 700;
+}
+
+/* Home page intro */
+.hlj-hero {
+  padding: 0.4rem 0 1.6rem;
+  margin-bottom: 2rem;
+  border-bottom: 3px solid var(--hlj-card-border);
+}
+.hlj-hero .hlj-kicker {
+  font-family: var(--md-code-font-family);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--hlj-muted);
+  margin: 0 0 0.4rem;
+}
+.md-typeset .hlj-hero h1 {
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  margin: 0 0 0.8rem;
+}
+.hlj-hero .hlj-stripe {
+  width: 8rem;
+  height: 0.4rem;
+  border-radius: 0.2rem;
+  background: var(--hlj-cable);
+  margin: 0 0 1rem;
+}
+.hlj-hero p:last-child {
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+/* Post cards on the front page */
+.md-post--excerpt {
+  border: 3px solid var(--hlj-card-border);
+  border-radius: 8px;
+  box-shadow: 6px 6px 0 var(--hlj-shadow);
+  padding: 1rem 1.4rem 0.6rem;
+  margin: 0 0 2.4rem;
+}
+.md-post--excerpt .md-post__content h2 {
+  margin-top: 0.6rem;
+}
+.md-post--excerpt .md-post__content h2 a {
+  color: var(--md-default-fg-color);
+}
+.md-post--excerpt .md-post__content h2 a:hover {
+  color: var(--md-typeset-a-color);
+}
+.md-post__action a {
+  font-weight: 800;
+}
+.md-post__action a::after {
+  content: " →";
+}
+
+/* Post meta: date, topic, reading time */
+.md-meta {
+  font-family: var(--md-code-font-family);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--hlj-muted);
+}
+.md-meta__link::before {
+  content: "";
+  display: inline-block;
+  width: 1.1rem;
+  height: 0.3rem;
+  border-radius: 0.15rem;
+  margin-right: 0.35rem;
+  vertical-align: middle;
+  background: var(--hlj-ink);
+}
+[data-md-color-scheme="slate"] .md-meta__link::before {
+  background: #E5E7EB;
+}
+
+/* One cable colour per phase. Add a line here when a new topic arrives. */
+.md-meta__link[href*="category/foundations"]::before { background: var(--hlj-blue); }
+.md-meta__link[href*="category/firewall"]::before    { background: var(--hlj-yellow); }
+.md-meta__link[href*="category/pi-cluster"]::before  { background: var(--hlj-orange); }
+.md-meta__link[href*="category/game-night"]::before  { background: var(--hlj-green); }
+
+/* Code */
+.md-typeset code {
+  border-radius: 4px;
+}
+
+/* Footer */
+.md-footer {
+  background-color: var(--hlj-ink);
+}
+.md-footer::before {
+  content: "";
+  display: block;
+  height: 6px;
+  background: var(--hlj-cable);
+}
+
+/* Logo: a touch bigger, with an outline so it doesn't vanish into the ink header */
+.md-header__button.md-logo img {
+  height: 1.7rem;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1.5px #6B7280;
+}
