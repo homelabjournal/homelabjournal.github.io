@@ -29,17 +29,17 @@ It also made a great split of work. My son owns the front end: how it looks, the
 
 This project is all about constraints.
 
-**The screen** is a first-generation iPad Air. Its last update is iOS 12, so its browser is Safari 12, from 2018. Plenty of modern web code simply doesn't run on it: no optional chaining (`?.`), no nullish coalescing (`??`), no `gap` on Flexbox layouts, no `aspect-ratio`. The worst one is regex lookbehind: Safari 12 treats it as a syntax error, and one syntax error stops the *whole* script from running, so the screen just stays blank. So the project has a linter that refuses anything Safari 12 can't handle, so mistakes are caught on the laptop rather than on the wall.
+**The screen** is a first-generation iPad Air. Its last update is iOS 12, so its browser is Safari 12, from 2018. Plenty of modern web code simply doesn't run on it: no optional chaining (`?.`), no nullish coalescing (`??`), no `gap` on Flexbox layouts, no `aspect-ratio`. The worst one is regex lookbehind: Safari 12 treats it as a syntax error, and one syntax error stops the *whole* script from running, so the screen just stays blank. So the project has a linter that refuses the things we know Safari 12 can't handle, so most mistakes are caught on the laptop rather than on the wall. It can't catch everything, which is why every step was also checked on the real iPad.
 
 **The server** is the original Raspberry Pi: 512MB of RAM and one 700MHz core, already busy with Pi-hole, which owns the usual web ports. So the dashboard runs alongside it on its own port, as a small Python **Flask** app. It does all the fetching and caching, and the iPad only ever asks the Pi for one small bundle of data.
 
 ## Built with Claude Code
 
-We built the dashboard over two weekends with **Claude Code**, Anthropic's AI coding assistant, working in the project's repository.
+We built the dashboard over two weekends and an evening in between with **Claude Code**, Anthropic's AI coding assistant, working in the project's repository.
 
 The most useful trick was a rules file in the repo that Claude Code reads every time it starts. Ours spells out the hard limits: the iPad runs Safari 12, so here's the JavaScript and CSS it can't handle; the server is a Pi with 512MB of RAM, so keep it light; the calendar links and API keys are secrets that never go in the code. With that written down once, it stopped suggesting modern code the iPad couldn't run, and we could spend our time on what the dashboard should do.
 
-**Every line of code was written by Claude.** Our job was everything around it: writing the spec, brainstorming features, asking for changes ("move the photo", "make the bin reminder impossible to miss"), and checking the result. We worked step by step from a written plan, with a checkpoint after each step where we looked at the real thing on the real iPad, and we read and questioned every change before it went on the Pi.
+**Every line of code was written by Claude.** Our job was everything around it: writing the spec, brainstorming features, asking for changes ("move the photo", "make the bin reminder impossible to miss"), and checking the result. We worked step by step from a written plan, with a checkpoint after each step where we looked at the real thing on the real iPad. On the Pi itself, Claude Code asked before every command it ran, and I approved each one.
 
 ## How it works
 
@@ -51,13 +51,13 @@ The Pi does the slow, fiddly work, and the iPad just displays it:
 - **Trains** come from National Rail's live departure data, which is free once you register.
 - **The photo** is picked once a day, resized on the Pi, and cached, so the iPad never has to download anything big.
 
-Each source refreshes on its own schedule: the calendar every ten minutes, the weather every half hour, the bins and the photo once a day. If any source fails, the screen keeps showing the last good answer with a small "may be out of date" marker, rather than an error. A broken page on the kitchen wall would be noticed by everyone.
+Each source refreshes on its own schedule: the calendar every ten minutes, the weather every half hour, the bins and the photo once a day. The trains refresh every two minutes, but only around the times we actually travel; the rest of the time the Pi doesn't ask at all. If any source fails, the screen keeps showing the last good answer with a small "may be out of date" marker, rather than an error. A broken page on the kitchen wall would be noticed by everyone.
 
 We also gave the dashboard a friendly local name through Pi-hole, so the iPad opens a proper name rather than a string of numbers.
 
 ## Things that bit us
 
-**The calendar took a minute to read.** Our shared family calendar goes back years, and on the old Pi, parsing all 844 events took about **59 seconds**, every ten minutes. The fix was to throw away events that can't possibly fall in the next two days *before* parsing, while always keeping repeating events. Parsing then takes a tiny fraction of the time.
+**The calendar took a minute to read.** Our shared family calendar goes back years, and on the old Pi, parsing all 844 events took about **59 seconds**, every ten minutes. Most of those were one-off events from years ago. The fix was to throw away events that can't possibly fall in the next two days *before* parsing, while always keeping repeating events, so the slow parser only sees the few that matter.
 
 **Two requests at once broke the photo.** The logs showed two refreshes running at the same moment, both writing the same temporary file, and one of them losing. Each source now takes a lock, checks again whether someone else has just refreshed it, and only then does the work. The photo is saved under a unique name and swapped into place in one step, so a power cut can never leave half a picture.
 
@@ -69,19 +69,22 @@ We also gave the dashboard a friendly local name through Pi-hole, so the iPad op
 
 ## The photo of the day
 
-The first version picked photos from a shared iCloud album. That worked, but it relied on an unofficial Apple interface that could change at any time, and it meant our photos were going via the internet. Once we'd tidied up the NAS (more on that in a later post), we switched to a folder of favourites on the NAS instead. The photos never leave the house now, and naming a file something like `2019-08 Beach.jpg` gives it a caption on the screen.
+The first version picked photos from a shared iCloud album. That worked, but it relied on an unofficial Apple interface that could change at any time, and it meant our photos were going via the internet. Once we'd tidied up the NAS (more on that in a later post), we switched to a folder of favourites on the NAS instead, so the photos will never leave the house. Naming a file something like `2019-08 Beach.jpg` gives it a caption on the screen; a photo without one simply has no caption, because showing who took it read like a photo credit.
+
+The code for this is done. The Pi still needs connecting to that NAS folder, so for now the screen keeps showing the last photo it saved, marked as out of date, which is exactly what it's meant to do when a source is missing.
 
 ## Where it's up to
 
 It's been running on the Pi since the middle of October. Still to do:
 
+- **The photo folder:** connect the Pi to the favourites folder on the NAS, read-only.
 - **Power-cut drills:** pull the Pi's plug and check the screen recovers on its own.
 - **The wall:** the iPad goes up near the kettle, locked to the dashboard with Guided Access, with auto-lock switched off.
-- **Looking after the battery:** an old iPad left charging around the clock can swell, so its charger will go on a smart plug that only charges it for a few hours a day.
+- **Looking after the battery:** an old iPad left charging around the clock can swell, so its charger will go on a smart plug that only charges it for a few hours a day. The plug is on its way. The plan is for the Pi to write the charging times into the plug's own schedule, so charging carries on even if the Pi is down.
 
 ## What it cost
 
-Nothing so far. The iPad, the Pi and the charger were all spare. The smart plug and a wall mount will be the only purchases.
+Very little. The iPad, the Pi and the charger were all spare. The only purchases are the smart plug for the charger, which is on order, and a wall mount still to buy.
 
 ## What's next
 
