@@ -7,15 +7,15 @@ categories: [The plan]
 
 # Why we're building a home lab
 
-It started with my son asking if he could run a Minecraft server for his friends. I said yes, and then I said "but let's do it properly".
+It started with screens. My son is a teenager, and like most teenagers he can lose an evening to gaming or scrolling on his phone. I wanted to find something fun we could do together that would get him building rather than just consuming.
 
 <!-- more -->
 
-## The real reason
+## Why a home lab
 
-If I'm honest, this wasn't really about Minecraft. My son is a teenager, and like most teenagers he can lose an evening to gaming or scrolling on his phone. I wanted to find something we could do together that would get him building rather than just consuming: something where he'd learn genuinely useful things, how networks, servers and the internet actually work, and enjoy himself along the way.
+A home lab ticks both boxes. He learns genuinely useful things along the way: how networks, servers and the internet actually work. And there's no shortage of fun things to build with it.
 
-The Minecraft server was the hook. Running one properly means a server that stays up, backups, keeping strangers out, and letting his friends in from their own houses. That leads straight into firewalls, networks, Linux and a bit of code. It turned out to be the perfect excuse.
+A Minecraft server for his friends was one of the ideas. Running one properly means a server that stays up, backups, keeping strangers out, and letting his friends in from their own houses. That leads straight into firewalls, networks, Linux and a bit of code, which is exactly the point.
 
 ## A house that was already wired
 
