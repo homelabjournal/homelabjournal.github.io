@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block analytics %}
+  {{ super() }}
+  {% if config.extra.cloudflare_analytics_token %}
+    <!-- Cloudflare Web Analytics: no cookies, no personal data -->
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+            data-cf-beacon='{"token": "{{ config.extra.cloudflare_analytics_token }}"}'></script>
+  {% endif %}
+{% endblock %}

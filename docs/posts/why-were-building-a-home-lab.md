@@ -1,4 +1,5 @@
 ---
+description: Why a dad and his teenage son are turning an unused wired house and a drawer of old kit into a home lab, built with AI from day one.
 date: 2026-10-27
 authors: [lab]
 categories: [The plan]

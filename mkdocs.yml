@@ -4,6 +4,7 @@ site_url: https://homelabjournal.com/
 
 theme:
   name: material
+  custom_dir: overrides
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -30,6 +31,17 @@ plugins:
       draft_on_serve: true
       draft_if_future_date: true
   - tags
+  - rss:
+      match_path: "posts/.*"
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+      comments_path: null
+      use_git: false
+      abstract_chars_count: 300
+      feed_title: Home Lab Journal
+      feed_description: My son and I build a home lab, one phase at a time.
 
 markdown_extensions:
   - admonition
@@ -45,3 +57,14 @@ markdown_extensions:
 nav:
   - Blog: index.md
   - About: about.md
+
+extra:
+  # Cloudflare Web Analytics: the site token from Cloudflare (Web Analytics → the site →
+  # Manage site). It's public by design (it appears in every page), so it can live here.
+  # Leave it empty to switch the stats off.
+  cloudflare_analytics_token: ""
+  social:
+    - icon: material/rss
+      link: /feed_rss_created.xml
+      name: RSS feed
+

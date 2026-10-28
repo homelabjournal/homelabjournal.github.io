@@ -1,4 +1,5 @@
 ---
+description: How an original 2012 Raspberry Pi with 512MB of RAM became a Pi-hole ad blocker, and why our router made us set DNS by hand.
 date: 2026-10-28
 authors: [lab]
 categories: [Foundations]
