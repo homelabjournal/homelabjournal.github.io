@@ -8,4 +8,6 @@
 
 My son and I are turning a cupboard full of cables into a proper home lab: a firewall, a Raspberry Pi cluster, a game server for his friends, and everything in between. One phase at a time, mistakes included, with an AI assistant helping all the way.
 
+[Follow along on Instagram](https://www.instagram.com/homelabjournal/){ .hlj-follow }
+
 </div>

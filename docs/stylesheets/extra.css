@@ -111,8 +111,10 @@
   background: var(--hlj-cable);
   margin: 0 0 1rem;
 }
-.hlj-hero p:last-child {
+.hlj-hero p {
   font-size: 0.95rem;
+}
+.hlj-hero p:last-child {
   margin-bottom: 0;
 }
 
@@ -189,4 +191,13 @@
   height: 1.7rem;
   border-radius: 5px;
   box-shadow: 0 0 0 1.5px #6B7280;
+}
+
+/* "Follow along on Instagram" link in the home page intro */
+.md-typeset a.hlj-follow {
+  display: inline-block;
+  font-weight: 800;
+}
+.md-typeset a.hlj-follow::after {
+  content: " →";
 }
