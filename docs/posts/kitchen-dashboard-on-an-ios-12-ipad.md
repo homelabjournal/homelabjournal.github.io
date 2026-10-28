@@ -88,4 +88,4 @@ Very little. The iPad, the Pi and the charger were all spare. The only purchases
 
 ## What's next
 
-Tidying the NAS, starting with the photos: 20 years of family pictures from old laptops, phones and drives, and a surprising number of copies of each one.
+Tidying up the NAS, which had gone years without anyone really looking after it.

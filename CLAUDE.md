@@ -28,10 +28,11 @@ Posts follow the order things were actually done:
 1. Why we're building a home lab (published 27 Oct 2026)
 2. Pi-hole on a 2012 Raspberry Pi (published 28 Oct 2026)
 3. The kitchen dashboard on an iOS 12 iPad (draft, dated 29 Oct; waiting for the dad's review)
-4. Photos: finding and removing 50,000 duplicates, then sorting 20 years of pictures by date
-5. Documents: 6,000 files from old drives down to about 540, named from their contents with OCR
-6. The rack tidy, with before and after photos (when it's done)
-7. Then the firewall, the Pi cluster and the rest of the plan, as they happen
+4. Tidying up the NAS: locking it down, accounts, health checks, space, layout and backups (draft, dated 30 Oct)
+5. Photos: finding and removing 50,000 duplicates, then sorting 20 years of pictures by date (draft, dated 31 Oct)
+6. Documents: 6,000 files from old drives down to about 540, named from their contents with OCR
+7. The rack tidy, with before and after photos (when it's done)
+8. Then the firewall, the Pi cluster and the rest of the plan, as they happen
 
 ## Site features
 
