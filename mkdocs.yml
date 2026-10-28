@@ -72,6 +72,9 @@ extra:
   # Leave it empty to switch the stats off.
   cloudflare_analytics_token: "6ce965d759334a58a625d6d4219bd517"
   social:
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/homelabjournal/
+      name: Instagram
     - icon: material/rss
       link: /feed_rss_created.xml
       name: RSS feed
