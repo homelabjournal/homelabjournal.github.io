@@ -1,6 +1,6 @@
 ---
 description: A family dashboard for an old iPad stuck on Safari 12, served by a 2012 Raspberry Pi, with every line of code written by Claude.
-date: 2026-10-29
+date: 2026-10-31
 authors: [lab]
 categories: [Foundations]
 draft: true
