@@ -35,7 +35,7 @@ This project is all about constraints.
 
 ## How we built it
 
-We built it over two weekends and an evening in between, step by step from a written plan, with the code written with Claude Code. After each step we stopped and checked the real thing on the real iPad, because so many problems only show up on Safari 12.
+We built it over two weekends and an evening in between, step by step from a written plan, writing the code with Claude Code. After each step we stopped and checked the real thing on the real iPad, because so many problems only show up on Safari 12.
 
 The thing that saved the most time was writing the hard limits down once, in a rules file kept with the code: the JavaScript and CSS that Safari 12 can't handle, a Pi with only 512MB of RAM, and calendar links and API keys that never go in the code. My son drove the look and feel ("move the photo", "make the bin reminder impossible to miss"), I drove the data side, and every command that ran on the Pi was approved by me first.
 

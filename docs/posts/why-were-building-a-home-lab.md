@@ -70,7 +70,7 @@ We wrote the whole thing down first: a plan in phases, each one small enough to 
 There's a third member of this project: **Claude**, Anthropic's AI assistant. We're using it for almost everything, and we want to be upfront about that from the start, because it's a big part of the story.
 
 - **Planning.** The whole plan, phase by phase, was written in conversation with Claude: what to buy, what order to do things in, and what could go wrong.
-- **Writing the code.** **All of the code is written by Claude**, using **Claude Code**, which works directly in our repository: it reads the code, makes changes, runs the tests and explains what it did. Our part is the spec, the feature requests and the brainstorming, and reviewing and testing what comes back.
+- **Writing the code.** **The code is written with Claude Code**, which works directly in our repository: it reads the code, makes changes, runs the tests and explains what it did. Our part is the spec, the feature requests and the brainstorming, and reviewing and testing what comes back.
 - **Doing the work.** It walks us through each step, reads error messages and logs with us, and keeps the plan and notes up to date as we go.
 - **This blog.** Posts are drafted by Claude from our plan, our notes and the project history, then edited by us so they say what we actually did and think.
 
