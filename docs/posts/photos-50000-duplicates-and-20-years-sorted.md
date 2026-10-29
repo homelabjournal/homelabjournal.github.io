@@ -8,7 +8,7 @@ draft: true
 
 # Photos: 50,000 duplicates, then 20 years sorted by date
 
-Our family photos lived on the NAS, in theory. In practice they were spread across year folders, camera dumps, phone dumps and copies of old laptops, often several times over. Over three days I set aside more than 50,000 spare copies and sorted everything that was left into one folder per month, with two scripts written by Claude and one rule: no script ever deletes anything.
+Our family photos lived on the NAS, in theory. In practice they were spread across year folders, camera dumps, phone dumps and copies of old laptops, often several times over. Over three days I set aside more than 50,000 spare copies and sorted everything that was left into one folder per month, with two scripts and one rule: no script ever deletes anything.
 
 <!-- more -->
 
@@ -76,9 +76,9 @@ Real photo collections are messier than that, so the script has a few rules:
 - **Videos already in the home videos share.** About 200 old camera clips were already in the home videos share, so they went to `_duplicates` instead of being copied in again, after a full checksum check.
 - **Leftovers.** Once everything had moved, the old dump folders were empty shells, so a tidy-up command removes empty folders (or ones holding only clutter like `Thumbs.db`), after a dry run like everything else. Another removes the needless " (2)" that years of copying had added to file names.
 
-## Built with Claude Code
+## How I worked
 
-This one was just me, working with Claude. As with everything in this lab, **Claude wrote all the code**: the duplicate finder, the date sorter, and every fix above. My part was deciding what I wanted (keep the named folders, drop the Live Photo clips, never delete), reading the dry-run reports, and running the moves. Each of the snags became a short request, a fix, and another dry run.
+This one was just me. The duplicate finder and the date sorter were written with Claude Code; my part was deciding what I wanted (keep the named folders, drop the Live Photo clips, never delete), reading the dry-run reports, and running the moves. Each snag became a short request, a fix, and another dry run.
 
 ## Where it's up to
 

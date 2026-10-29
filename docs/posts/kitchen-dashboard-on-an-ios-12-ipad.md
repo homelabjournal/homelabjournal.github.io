@@ -1,5 +1,5 @@
 ---
-description: A family dashboard for an old iPad stuck on Safari 12, served by a 2012 Raspberry Pi, with every line of code written by Claude.
+description: A family dashboard for an old iPad stuck on Safari 12, served by a 2012 Raspberry Pi.
 date: 2026-10-31
 authors: [lab]
 categories: [Foundations]
@@ -23,7 +23,7 @@ Every morning in our house involves the same questions. What's on today? Is it g
 - **live train times** for our usual trains, including whether they're late;
 - **a photo of the day** from our own pictures.
 
-It also made a great split of work. My son owns the front end: how it looks, the layout, the colours, the night mode and every tile. I own the back end that gathers the data. Neither of us wrote the code itself, though; more on that below.
+It also made a great split of work. My son owns the front end: how it looks, the layout, the colours, the night mode and every tile. I own the back end that gathers the data.
 
 ## Two very old computers
 
@@ -33,13 +33,11 @@ This project is all about constraints.
 
 **The server** is the original Raspberry Pi: 512MB of RAM and one 700MHz core, already busy with Pi-hole, which owns the usual web ports. So the dashboard runs alongside it on its own port, as a small Python **Flask** app. It does all the fetching and caching, and the iPad only ever asks the Pi for one small bundle of data.
 
-## Built with Claude Code
+## How we built it
 
-We built the dashboard over two weekends and an evening in between with **Claude Code**, Anthropic's AI coding assistant, working in the project's repository.
+We built it over two weekends and an evening in between, step by step from a written plan, with the code written with Claude Code. After each step we stopped and checked the real thing on the real iPad, because so many problems only show up on Safari 12.
 
-The most useful trick was a rules file in the repo that Claude Code reads every time it starts. Ours spells out the hard limits: the iPad runs Safari 12, so here's the JavaScript and CSS it can't handle; the server is a Pi with 512MB of RAM, so keep it light; the calendar links and API keys are secrets that never go in the code. With that written down once, it stopped suggesting modern code the iPad couldn't run, and we could spend our time on what the dashboard should do.
-
-**Every line of code was written by Claude.** Our job was everything around it: writing the spec, brainstorming features, asking for changes ("move the photo", "make the bin reminder impossible to miss"), and checking the result. We worked step by step from a written plan, with a checkpoint after each step where we looked at the real thing on the real iPad. On the Pi itself, Claude Code asked before every command it ran, and I approved each one.
+The thing that saved the most time was writing the hard limits down once, in a rules file kept with the code: the JavaScript and CSS that Safari 12 can't handle, a Pi with only 512MB of RAM, and calendar links and API keys that never go in the code. My son drove the look and feel ("move the photo", "make the bin reminder impossible to miss"), I drove the data side, and every command that ran on the Pi was approved by me first.
 
 ## How it works
 

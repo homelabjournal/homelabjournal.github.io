@@ -12,11 +12,11 @@ Our NAS holds the family's photos, home videos, music and films, and for years w
 
 <!-- more -->
 
-My son was away for part of the school holiday, so this one was just me, working with Claude.
+My son was away for part of the school holiday, so this one was just me.
 
 ## What the review found
 
-With Claude, I went through its settings, its shared folders and a report of what was using the space. It wasn't pretty.
+I went through its settings, its shared folders and a report of what was using the space. It wasn't pretty.
 
 - **It could be reached from the internet.** The maker's remote access feature was switched on, and the NAS still had rules for the router to open ports to it, left over from old apps.
 - **One all-powerful account.** The only administrator was the default `admin` account, the first name anyone would try, with no two-step sign-in.
@@ -85,9 +85,9 @@ A backup you haven't restored from is only a hope, so I **downloaded a few old p
 - **The Mac kept using the old login.** Its backup runs as a system service with its own saved password, so it carried on quietly signing in as the old administrator until that password was changed.
 - **The Mac lost the NAS.** A VPN app on the laptop had put its own name servers first, so the Mac couldn't find the NAS by name. Allowing local network access in the VPN app, plus a fixed entry on the Mac, sorted it.
 
-## Built with Claude
+## How I did it
 
-There wasn't much code in this one: it was mostly settings, worked through step by step from a plan written with Claude. The code that did come out of it, for the photos and the documents, was all written by Claude, and has its own posts.
+There wasn't much code in this one: it was mostly settings, worked through step by step from a plan written with Claude. The code that did come out of it, for the photos and the documents, has its own posts.
 
 ## Where it's up to
 
