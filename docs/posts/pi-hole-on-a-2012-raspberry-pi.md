@@ -57,6 +57,11 @@ Once Pi-hole is answering DNS, it can also answer for things only inside the hou
 
 ## Living with it
 
+<figure markdown>
+![The Pi-hole dashboard over 24 hours: 134,352 queries, 10,427 blocked (7.8%), 71,493 domains on the blocklists, and a bar chart of queries through the day](images/pihole-dashboard.jpg){ loading=lazy width="520" }
+<figcaption>A day in the life of our Pi-hole: over 134,000 lookups from five devices, and about one in thirteen blocked.</figcaption>
+</figure>
+
 - **When something breaks,** it's almost always a blocked domain. You find it in the query log and add it to the allowlist. It's a skill worth teaching, and my son now does it faster than I do.
 - **Back it up.** Pi-hole's *Teleporter* exports all its settings into one file, and we keep a copy in our private repository. If the SD card dies, it's a new card, a fresh install and one import.
 
