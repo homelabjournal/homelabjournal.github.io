@@ -77,7 +77,12 @@ It's been running on the Pi since the middle of October. Still to do:
 
 - **Power-cut drills:** pull the Pi's plug and check the screen recovers on its own.
 - **The wall:** the iPad goes up near the kettle, locked to the dashboard with Guided Access, with auto-lock switched off.
-- **Looking after the battery:** an old iPad left charging around the clock can swell, so its charger goes on a smart plug that only charges it for a few hours a day. The plug has arrived and is set up to work entirely inside the house: password on, no cloud account, Bluetooth off. Next, the Pi will write the charging times into the plug's own schedule, so charging carries on even if the Pi is down.
+
+## Looking after the battery
+
+An old iPad left charging around the clock can swell, so its charger is now on a smart plug that only charges it twice a day: **1am to 5am, and 1pm to 4pm**. The schedule is set on the plug itself, so it carries on whatever else is happening.
+
+The plug works entirely inside the house: password on, no cloud account, Bluetooth off. Next we'll keep an eye on the battery for a week or so and adjust the times if it runs low.
 
 ## What it cost
 
