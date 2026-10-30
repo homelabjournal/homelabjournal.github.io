@@ -23,6 +23,11 @@ It's a brilliant first lesson for a teenager. Pi-hole's query log shows every na
 
 The Pi we found is an original Model B: **512MB of RAM and a single-core 700MHz processor**. A modern phone is hundreds of times faster. But a DNS server for a household barely does anything, so it's enough.
 
+<figure markdown>
+![Our 2012 Raspberry Pi in a black case with the lid flipped open, showing the board, with a yellow network cable plugged in](images/pi-in-its-case.jpg){ loading=lazy width="380" }
+<figcaption>The world's slowest server, lid open.</figcaption>
+</figure>
+
 What we used:
 
 - the old Pi, plus a decent **new SD card** (old cards are the most common reason old Pis are flaky);
