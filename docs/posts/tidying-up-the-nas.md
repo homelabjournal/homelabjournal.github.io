@@ -1,6 +1,6 @@
 ---
 description: Our old NAS was open to the internet, 83% full and quietly unwatched, so I spent a few days locking it down, adding health alerts, freeing half its space and giving it a tidy layout.
-date: 2026-11-03
+date: 2026-11-04
 authors: [lab]
 categories: [Foundations]
 draft: true

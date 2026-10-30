@@ -1,6 +1,6 @@
 ---
 description: How I found and set aside over 50,000 duplicate photos and videos, then sorted 20 years of family pictures into folders by date, without letting a script delete anything.
-date: 2026-11-05
+date: 2026-11-06
 authors: [lab]
 categories: [Foundations]
 draft: true
