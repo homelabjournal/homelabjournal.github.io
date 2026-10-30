@@ -67,22 +67,21 @@ We also gave the dashboard a friendly local name through Pi-hole, so the iPad op
 
 ## The photo of the day
 
-The first version picked photos from a shared iCloud album. That worked, but it relied on an unofficial Apple interface that could change at any time, and it meant our photos were going via the internet. Once we'd tidied up the NAS (more on that in a later post), we switched to a folder of favourites on the NAS instead, so the photos will never leave the house. Naming a file something like `2019-08 Beach.jpg` gives it a caption on the screen; a photo without one simply has no caption, because showing who took it read like a photo credit.
+The first version picked photos from a shared iCloud album. That worked, but it relied on an unofficial Apple interface that could change at any time, and it meant our photos were going via the internet. Once we'd tidied up the NAS (more on that in a later post), we switched to a folder of favourites on the NAS instead, so the photos never leave the house. Naming a file something like `2019-08 Beach.jpg` gives it a caption on the screen; a photo without one simply has no caption, because showing who took it read like a photo credit.
 
-The code for this is done. The Pi still needs connecting to that NAS folder, so for now the screen keeps showing the last photo it saved, marked as out of date, which is exactly what it's meant to do when a source is missing.
+The Pi reads that folder read-only, through its own NAS account that can see the favourites and nothing else. Until it was connected, the screen kept showing the last photo it had saved, marked as out of date, which is exactly what it's meant to do when a source is missing.
 
 ## Where it's up to
 
 It's been running on the Pi since the middle of October. Still to do:
 
-- **The photo folder:** connect the Pi to the favourites folder on the NAS, read-only.
 - **Power-cut drills:** pull the Pi's plug and check the screen recovers on its own.
 - **The wall:** the iPad goes up near the kettle, locked to the dashboard with Guided Access, with auto-lock switched off.
-- **Looking after the battery:** an old iPad left charging around the clock can swell, so its charger will go on a smart plug that only charges it for a few hours a day. The plug is on its way. The plan is for the Pi to write the charging times into the plug's own schedule, so charging carries on even if the Pi is down.
+- **Looking after the battery:** an old iPad left charging around the clock can swell, so its charger goes on a smart plug that only charges it for a few hours a day. The plug has arrived and is set up to work entirely inside the house: password on, no cloud account, Bluetooth off. Next, the Pi will write the charging times into the plug's own schedule, so charging carries on even if the Pi is down.
 
 ## What it cost
 
-Very little. The iPad, the Pi and the charger were all spare. The only purchases are the smart plug for the charger, which is on order, and a wall mount still to buy.
+Very little. The iPad, the Pi and the charger were all spare. The only purchases are the smart plug for the charger and a wall mount, which is still to buy.
 
 ## What's next
 
