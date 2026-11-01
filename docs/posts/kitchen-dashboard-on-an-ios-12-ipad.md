@@ -24,6 +24,11 @@ Every morning in our house involves the same questions. What's on today? Is it g
 
 It also made a great split of work. My son owns the front end: how it looks, the layout, the colours, the night mode and every tile. I own the back end that gathers the data.
 
+<figure markdown>
+![The kitchen dashboard: a large clock, the weather, bin day, today's and tomorrow's plans and the morning trains on the left, with a tall photo panel on the right](images/kitchen-dashboard-demo.jpg){ loading=lazy }
+<figcaption>The dashboard at the iPad's size, shown with made-up demo data, the same mode we used to design it.</figcaption>
+</figure>
+
 ## Two very old computers
 
 This project is all about constraints.
