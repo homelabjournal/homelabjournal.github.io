@@ -1,6 +1,6 @@
 # About
 
-I'm a dad building a home lab with my teenage son, in a 9U wall cabinet in a cupboard.
+I'm a dad building a home lab with my teenage son, in a 9U wall cabinet in an alcove.
 
 I've been coding for 30-odd years; he's learning by building. Our plan runs from a Pi-hole on a Raspberry Pi from 2012 all the way to a firewall, a small Kubernetes cluster, Minecraft for his friends, a VPN, and cameras that don't phone home.
 

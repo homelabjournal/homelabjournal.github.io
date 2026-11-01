@@ -19,7 +19,7 @@ A Minecraft server for his friends was one of the ideas. Running one properly me
 
 ## A house that was already wired
 
-When we had building work done on the house a few years ago, we had Ethernet run to most of the rooms. It all comes back to a patch panel and a 24-port switch in a small wall cabinet in a cupboard, next to the internet provider's router.
+When we had building work done on the house a few years ago, we had Ethernet run to most of the rooms. It all comes back to a patch panel and a 24-port switch in a small wall cabinet in an alcove, next to the internet provider's router.
 
 And then we never really used it. A few things were plugged in, the Wi-Fi did the rest, and the cabinet slowly filled up with power adapters and loose cables. Nobody had ever properly mapped which wall socket went to which switch port. So we have a wired house, a decent switch and a cabinet with room to spare, all massively under-used. That's a great place to start a home lab.
 
