@@ -1,5 +1,5 @@
 ---
-description: Our old NAS was open to the internet, 83% full and quietly unwatched, so I spent a few days locking it down, adding health alerts, freeing half its space and giving it a tidy layout.
+description: Our old NAS was open to the internet, 83% full and quietly unwatched, so I spent a few days locking it down, adding health alerts, freeing more than half its space and giving it a tidy layout.
 date: 2026-11-04
 authors: [lab]
 categories: [Foundations]
@@ -60,7 +60,7 @@ The drives are healthy but old, so the numbers get a look each month. The first 
 
 ## Making room
 
-The biggest win was simple: **an old Mac backup of more than 1.5TB**, for a computer last backed up in 2021. Deleting it took the NAS from **83% to 50% full.**
+The biggest win was simple: **an old Mac backup of more than 1.5TB**, for a computer last backed up in 2021. Deleting it took the NAS from **83% to 50% full.** Later, once the photo and document clean-ups were done (more on those in the next posts) and their holding folders and recycle bins were emptied, it came down to **41%**.
 
 The Mac we do use now backs up to a fresh, encrypted backup, under its own account with a size limit. Before, it signed in as the administrator, so the limit had never applied, and its backups could have filled the NAS.
 
@@ -94,7 +94,6 @@ There wasn't much code in this one: it was mostly settings, worked through step 
 All of the above is done. Still to come:
 
 - **Converting the films** from their old DVD format to a much smaller modern one, which should free about another 1.2TB.
-- **Emptying the holding folders** from the photo and document clean-ups, once they've had a week to prove nothing's missing.
 - **A proper media server** later on, once the Pi cluster is running.
 
 ## What it cost

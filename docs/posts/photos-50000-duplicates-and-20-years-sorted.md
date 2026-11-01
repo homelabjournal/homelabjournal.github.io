@@ -26,7 +26,7 @@ And that was before the newest photos. Almost everything since 2018 only existed
 
 ## The rule: nothing is deleted by a script
 
-Deleting the wrong copy of a family photo is the one mistake I couldn't undo, so the scripts never delete. They *move* things into holding folders, `_duplicates` and `_junk`, keeping each file's original folder path, and they write a log of every move so a single command can put everything back. I empty the holding folders by hand, after a week of using the library and finding nothing missing.
+Deleting the wrong copy of a family photo is the one mistake I couldn't undo, so the scripts never delete. They *move* things into holding folders, `_duplicates` and `_junk`, keeping each file's original folder path, and they write a log of every move so a single command can put everything back. The holding folders are emptied by hand, and only once I've used the library for a while and found nothing missing.
 
 There was a second safety net underneath: the photos already had an offsite backup, and I'd tested restoring a few old photos from it a couple of days before.
 
@@ -82,10 +82,9 @@ This one was just me. The duplicate finder and the date sorter were written with
 
 ## Where it's up to
 
-The sort finished on the third day. The final scan shows **47,561 photos and videos, 226GB, all in their year and month folders,** with just the 835 undated ones left. Still to do:
+The sort finished on the third day. The final scan shows **47,561 photos and videos, 226GB, all in their year and month folders,** with just the 835 undated ones left. A few days later, with nothing missing, I emptied the holding folders by hand; that's when the space actually came back. Still to do:
 
 - **Check the next backup run succeeds.** Moving files means the backup uploads them again in their new places.
-- **Empty the holding folders** after a week of using the library with nothing missing. That's when the space actually comes back.
 - **Date the undated photos.** Most are in a few named groups, so a year and a month per folder will do.
 - **Near-duplicates.** Checksums don't catch resized or edited copies. A photo library app planned for later can find those by how they look.
 - **Keep iCloud in step.** Until the Pi cluster exists, that's a monthly job by hand: download the new photos, then run the same two scripts.
