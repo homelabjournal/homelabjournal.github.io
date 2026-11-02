@@ -3,7 +3,6 @@ description: Our old NAS was open to the internet, 83% full and nobody was keepi
 date: 2026-11-04
 authors: [lab]
 categories: [Foundations]
-draft: true
 ---
 
 # Tidying up the NAS

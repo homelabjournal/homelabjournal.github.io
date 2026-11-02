@@ -29,7 +29,7 @@ Posts follow the order things were actually done:
 1. Why we're building a home lab (published 27 Oct 2026)
 2. Pi-hole on a 2012 Raspberry Pi (published 28 Oct 2026)
 3. The kitchen dashboard on an iOS 12 iPad (published 1 Nov 2026)
-4. Tidying up the NAS: locking it down, accounts, health checks, space, layout and backups (draft, dated Wed 4 Nov)
+4. Tidying up the NAS: locking it down, accounts, health checks, space, layout and backups (queued for Wed 4 Nov)
 5. Photos: finding and removing 50,000 duplicates, then sorting 20 years of pictures by date (draft, dated Fri 6 Nov)
 6. Documents: 6,000 files from old drives down to about 540, named from their contents with OCR (planned for Mon 9 Nov)
 7. The rack tidy, with before and after photos (when it's done)
