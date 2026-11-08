@@ -76,7 +76,7 @@ There's no yearly clear-out. Documents are small, so we keep everything.
 
 Done: every source is ticked off, the inbox is empty and the backup is running. Still to come:
 
-- **A monthly job on the Pi cluster,** once it exists, that plans the inbox and runs the health check, then posts a summary to a family Discord channel. That's earmarked as a good first coding job for my son.
+- **A monthly job on the Pi cluster,** once it exists, that plans the inbox and runs the health check, then posts a summary to Discord. That's earmarked as a good first coding job for my son.
 - **Proper search** over all of it later, with a document app that reads every scan and lets you search for "council tax 2023".
 
 ## What it cost
