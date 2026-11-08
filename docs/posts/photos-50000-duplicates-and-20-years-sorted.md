@@ -3,7 +3,6 @@ description: How I found and set aside over 50,000 duplicate photos and videos, 
 date: 2026-11-08
 authors: [lab]
 categories: [Foundations]
-draft: true
 ---
 
 # Photos: 50,000 duplicates, then 20 years sorted by date
