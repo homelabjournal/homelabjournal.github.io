@@ -82,4 +82,4 @@ Nearly done. Still to do:
 
 ## What's next
 
-The old desktop PC: brought back to life, and given a new job.
+Phase 0 is done, so next is the whole lab on one page: a poster that draws itself.
