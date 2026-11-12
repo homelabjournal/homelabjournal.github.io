@@ -32,8 +32,10 @@ Posts follow the order things were actually done:
 4. Tidying up the NAS: locking it down, accounts, health checks, space, layout and backups (published 3 Nov 2026)
 5. Photos: finding and removing 50,000 duplicates, then sorting 20 years of pictures by date (published 8 Nov 2026)
 6. Documents: nearly 7,000 files from old drives down to about 540, named from their contents with OCR (published 12 Nov 2026)
-7. The rack tidy, with before and after photos (when it's done)
-8. Then the firewall, the Pi cluster and the rest of the plan, as they happen
+7. The rack tidy, with before and after photos (draft)
+8. The old desktop PC brought back to life, and its new job as the Linux From Scratch machine
+9. Linux From Scratch, the first OS on it (once it boots; or in two parts if that's a way off)
+10. Then the firewall, the Pi cluster and the rest of the plan, as they happen (the firewall comes before LFS if it's in first)
 
 ## Site features
 

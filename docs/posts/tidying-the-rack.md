@@ -82,4 +82,4 @@ Nearly done. Still to do:
 
 ## What's next
 
-The firewall: the first proper piece of the lab, and the point where the house stops relying on the internet provider's router.
+The old desktop PC: brought back to life, and given a new job.
