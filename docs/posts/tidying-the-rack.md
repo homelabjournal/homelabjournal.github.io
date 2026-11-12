@@ -54,7 +54,7 @@ Then came the shelf at U3 for the Pi-hole, the blanking panel at U5, and the fir
 
 ## Fans in the roof
 
-A closed glass door and a firewall on the way means heat. The cabinet's roof has two round grilles, so I hung a pair of quiet 120mm USB fans under them, inside the cabinet. The fans have no screw holes, so each one hangs on velcro ties threaded up through one slot in the grille and back down through the next. They blow upwards, pulling warm air out of the roof, while cool air comes in through the side vents. They sit behind the patch panel, so you barely see them.
+A closed glass door and a firewall on the way means heat. The cabinet's roof has two round grilles, so I hung a pair of quiet 120mm USB fans under them, inside the cabinet. The fans have no screw holes, so each one hangs on velcro ties threaded up through one slot in the grille and back down through the next. They blow upwards, pulling warm air out of the roof, while cool air comes in through the side vents. They sit behind the patch panel, so you can't see them at all.
 
 It was fiddly, but they work. For now they run on low all the time, powered from a USB charger on the strip.
 
@@ -78,7 +78,7 @@ Nearly done. Still to do:
 
 ## What it cost
 
-The plan budgeted £70 to £100 for three shelves, the blanking panel, velcro and the fans.
+**£107.55,** in one order: three shelves, a vented blanking plate, cage nuts to fix them, the roof fans, velcro ties, edge trim for the cable hole in the roof and a pair of temperature probes. That includes a pack of bolts for the fans that turned out not to be needed, since the fans have no screw holes. The power strip and the USB charger for the fans were already here.
 
 ## What's next
 
