@@ -31,7 +31,7 @@ Posts follow the order things were actually done:
 3. The kitchen dashboard on an iOS 12 iPad (published 1 Nov 2026)
 4. Tidying up the NAS: locking it down, accounts, health checks, space, layout and backups (published 3 Nov 2026)
 5. Photos: finding and removing 50,000 duplicates, then sorting 20 years of pictures by date (published 8 Nov 2026)
-6. Documents: 6,000 files from old drives down to about 540, named from their contents with OCR (planned for Wed 11 Nov)
+6. Documents: nearly 7,000 files from old drives down to about 540, named from their contents with OCR (published 12 Nov 2026)
 7. The rack tidy, with before and after photos (when it's done)
 8. Then the firewall, the Pi cluster and the rest of the plan, as they happen
 

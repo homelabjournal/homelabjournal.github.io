@@ -1,9 +1,8 @@
 ---
 description: How nearly 7,000 files from old drives and laptops came down to about 540 real documents, each named from what's inside it, plus the simple habit that keeps them tidy now.
-date: 2026-11-11
+date: 2026-11-12
 authors: [lab]
 categories: [Foundations]
-draft: true
 ---
 
 # Documents: nearly 7,000 files down to 540
