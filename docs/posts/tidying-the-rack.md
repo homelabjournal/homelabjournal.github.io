@@ -48,7 +48,7 @@ At the same time the patching got sorted out. Up to then it had grown by acciden
 
 The shelves went in over two days.
 
-**The power strip went in upside down, the first time.** The plan had the strip at the very bottom (U1) with the adapter shelf above it. Once it was in, the bottom of the cabinet sat right under the sockets, and big UK plugs just wouldn't go in. The next day I swapped them round: the strip at U2, the adapter shelf at U1 underneath, with the adapters lined up on it.
+**The power strip and its shelf swapped places.** At first the strip went at the very bottom (U1), with the adapter shelf above it. Once it was in, the bottom of the cabinet sat right under the sockets, and big UK plugs just wouldn't go in. The next day I swapped them round: the strip at U2, the adapter shelf at U1 underneath, with the adapters lined up on it.
 
 Then came the shelf at U3 for the Pi-hole, the blanking panel at U5, and the firewall's shelf at U6. The firewall was test-fitted on its shelf, with room above for the small fan on its top. Last of all, the power leads were run up the back corners and velcroed to the rails, with the slack of the house cables bundled at the back.
 
