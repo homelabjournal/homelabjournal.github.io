@@ -3,7 +3,6 @@ description: Our 9U wall cabinet had become a pile of kit, plugs and loose cable
 date: 2026-11-14
 authors: [lab]
 categories: [Foundations]
-draft: true
 ---
 
 # Tidying the rack
