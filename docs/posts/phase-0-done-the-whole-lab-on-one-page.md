@@ -25,7 +25,7 @@ One part never got a post of its own: mapping the cabling. The switch got a heal
 
 ## The poster
 
-People on r/homelab often share a one-page "my homelab" poster: the network, the kit, the services, all on one sheet. We wanted one too, but a drawing goes out of date the moment something changes, so ours is **generated**.
+People on r/homelab often share a one-page "my homelab" poster: the network, the kit, the services, all on one sheet. Ours is in the same style, but a drawing goes out of date the moment something changes, so ours is **generated**.
 
 Two files in the lab's repo describe everything. One lists the networks, the kit, the services, the rack, the roadmap and what's open to the internet, and marks each thing as **running**, **here or in progress**, or **planned**. The other is the map of the switch's ports from the cable survey. A script turns the two into a web page and a picture. Running things get a solid green outline, things in progress a dashed orange one, and planned things a faint dotted one. So you can see at a glance how much of the plan is real.
 
@@ -59,7 +59,7 @@ Each day that something happened also gets a one-line headline. Put together, th
 <figcaption>8 November, the end of Phase 0. Every port is mapped, the firewall has arrived, and the rack matches the plan.</figcaption>
 </figure>
 
-My favourite detail is on the first one. The switch line says "a TV box was the STP root". STP (spanning tree) is how network switches agree on a layout without loops, and one device gets elected as the root that everything else measures from. Ours had quietly elected a TV box. Our main switch has been in charge since 30 October.
+There's one odd detail on the first one. The switch line says "a TV box was the STP root". STP (spanning tree) is how network switches agree on a layout without loops, and one device gets elected as the root that everything else measures from. Ours had quietly elected a TV box. Our main switch has been in charge since 30 October.
 
 ## The version we can share
 
@@ -71,11 +71,11 @@ It also has a list of things that must never appear, such as brand names, rooms,
 
 ## How it was made
 
-The script was written with Claude Code, from a description of the posters we liked and what we wanted on ours. Adding the history, then the public version and its safety list, came later as separate requests. Keeping it current is now part of the lab's rules: whatever changes, the poster changes in the same commit.
+The script was written with Claude Code, in the style of those r/homelab posters. Adding the history, then the public version and its safety list, came later as separate requests. Keeping it current is now part of the lab's rules: whatever changes, the poster changes in the same commit.
 
 ## Where it's up to
 
-Phase 0 is done, apart from one small job: the temperature probe in the rack, which my son is wiring up. From here, an updated poster will close each phase's last post, so you can watch the dotted boxes turn green.
+Phase 0 is done, apart from one small job: the temperature probe in the rack, which is my son's job. From here, an updated poster will close each phase's last post, so you can watch the dotted boxes turn green.
 
 ## What it cost
 
