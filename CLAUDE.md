@@ -16,7 +16,7 @@ The blog at https://homelabjournal.com: a dad and his teenage son build a home l
 
 ## Publishing
 
-- **Two or three posts a week while catching up** (spaced a day or two apart), then as things happen. Never more than one a day. New posts are `draft: true` until the dad says publish. Giving a day for a post he's read counts as publish: queue it for that day straight away. To queue one, give it a future `date` and remove `draft: true`: future-dated posts stay hidden (and out of the RSS feed), and the daily 07:00 UTC rebuild publishes them on their date.
+- **Two or three posts a week while catching up** (spaced a day or two apart), then as things happen. Never more than one a day. New posts are `draft: true` until the dad says publish. Giving a day for a post he's read counts as publish: queue it for that day straight away. To queue one, give it a future `date` and remove `draft: true`: future-dated posts stay hidden (and out of the RSS feed), and the scheduled rebuilds (just after midnight, about 05:45 and about 08:10 UTC) publish them on their date. GitHub can run these hours late; if a post isn't up when it should be, start the Publish workflow by hand.
 - **Instagram goes out with the blog.** Each post gets a carousel on @homelabjournal on the same day it publishes (five hashtags at most: Instagram's limit). The carousels themselves live outside this repo.
 - Every post has `date`, `authors: [lab]`, `categories`, and a one-sentence `description` (for search results and link previews), plus a `<!-- more -->` after the opening paragraph.
 - Run the privacy checklist in `README.md` before publishing.
